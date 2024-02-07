@@ -34,6 +34,8 @@ public class EmployeeController {
 		return "/emps/list";//AVN : /WEB-INF/views/emps/list.jsp
 		//impl : model map 
 	}  
+	
+	//add Employee method 
 	@PostMapping("/add")
 	public String addEmployee(@RequestParam String fname,@RequestParam String lname,@RequestParam String cityName,@RequestParam String company,Model map)
 	{
